@@ -1,4 +1,6 @@
 from django.db import models
+from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy  # импортируем «ленивый» геттекст с подсказкой
 
 class Games(models.Model):
     name = models.CharField(
@@ -57,3 +59,17 @@ __contained_by для проверки, содержится ли этот ин�
 числовыми полями для проверки, находятся ли они в интервале);
 __overlap для проверки пересечения интервалов.
 """
+
+class Category(models.Model):
+    name = models.CharField(max_length=100,
+                            help_text=gettext_lazy('category name'))  # добавим переводящийся текст подсказку к полю
+
+
+class MyModel(models.Model):
+    name = models.CharField(max_length=100)
+    kind = models.ForeignKey(
+        Category,
+        on_delete=models.CASCADE,
+        related_name='kinds',
+        verbose_name=gettext_lazy('help text for MyModel model', 'This is the help text'),
+    )
