@@ -58,12 +58,15 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'Django_Beginning.urls'
-
+# реализация локализации
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'locale')
 ]
 
-LANGUAGE_CODE = 'ru'
+LANGUAGES = [
+       ('en', 'English'),
+       ('ru', 'Russian'),
+   ]
 
 TEMPLATES = [
     {

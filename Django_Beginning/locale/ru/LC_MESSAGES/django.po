@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-13 12:57+0700\n"
+"POT-Creation-Date: 2024-07-13 22:15+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,11 +30,24 @@ msgstr "Имя категории"
 
 #: .\game\models.py:74
 msgid "help text for MyModel model"
-msgstr ""
+msgstr "текст справки для модели MyModel"
+
+#: .\game\templates\index.html:28
+msgid "Check out my new cool translation"
+msgstr "ознакомьтесь с моим новым классным переводом"
 
 #: .\game\views.py:9
 msgid "Hello world"
 msgstr "Привет, мир"
+
+#~ msgid "Simple Localization Example"
+#~ msgstr "Простой пример локализации"
+
+#~ msgid "Welcome to our website!"
+#~ msgstr "Добро пожаловать на вебсайт!"
+
+#~ msgid "This is an example of simple localization using Django."
+#~ msgstr "Это пример простой локализации с использованием Django."
 
 #~ msgctxt "help text for MyModel model"
 #~ msgid "This is the help text"

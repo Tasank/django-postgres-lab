@@ -9,3 +9,6 @@ class Index(View):
         string = _('Hello world')
 
         return HttpResponse(string)
+
+def index(request):
+    return render(request, 'index.html')
